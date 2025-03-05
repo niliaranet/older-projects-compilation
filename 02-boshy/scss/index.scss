@@ -1,0 +1,17 @@
+@mixin abs {position: absolute; top: 0; left: 0;}
+@mixin rel {position: relative; top: 0; left: 0;}
+
+body { margin: 0; background-color: grey; }
+#spawn { @include rel; width: 0; height: 0;}
+
+img {@include abs;}
+.pixelated { image-rendering: pixelated; }
+
+
+#screen {
+  display: block;
+  overflow: hidden;
+  background-size: cover;
+  @include abs;
+}
+
