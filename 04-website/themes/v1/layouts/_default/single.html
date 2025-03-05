@@ -1,0 +1,15 @@
+{{ define "pre_title" }}
+{{ with .Parent }}
+<p>
+go to <a href="{{ .RelPermalink }}">{{ lower .LinkTitle }}</a>
+</p>
+{{ end }}
+{{ end }}
+
+{{ define "content" }}
+
+<div id="content">
+    {{ .Content }}
+</div>
+
+{{ end }}

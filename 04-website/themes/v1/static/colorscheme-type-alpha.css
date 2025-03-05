@@ -1,0 +1,26 @@
+:root {
+    --fg: #fff;
+    --bg-base: #222222;
+    --bg-above: #333333;
+
+    --bg-post: #292929;
+    --bg-post-alt: #2e2e2e;
+    --bg-nav: #1d1d1d;
+
+    --fg-date: #777;
+    --fg-highlight: #ffa500;
+
+    --fg-title-1: var(--fg-highlight);
+    --fg-title-2: #a8f;
+
+    /*
+    --fg-title-1: #f8f;
+    --fg-title-1: #a8f;
+    --fg-title-2: #2f2;
+    --fg-title-2: #ee0;
+    */
+
+    --border-top: var(--fg-highlight);
+    --border-bottom: #000;
+}
+

@@ -1,0 +1,19 @@
+:root {
+    --fg: #fff;
+    --bg-base: #151310;
+    --bg-above: #191513;
+
+    --bg-post: #292929;
+    --bg-post-alt: #2e2e2e;
+    --bg-nav: #1d1d1d;
+
+    --fg-date: #777;
+    --fg-highlight: #2f2;
+
+    --fg-title-1: var(--fg-highlight) /*#2ff*/;
+    --fg-title-2: #a8f;
+
+    --border-top: var(--fg-highlight);
+    --border-bottom: #000;
+}
+

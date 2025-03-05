@@ -1,0 +1,6 @@
+== api ==
+curlie
+-f [POST/PUT/DELETE] (leave empty for GET)
+(:8000/api/[song/album/artist] || :8000/auth/[encode_token/decode_token/protected])
+argument=value (ex: id=2)
+header:value (Authorization:token_here)

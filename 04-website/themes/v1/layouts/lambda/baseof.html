@@ -1,0 +1,11 @@
+{{ partial "lambda_header.html" . }}
+{{ partial "site_nav.html" . }}
+
+<main>
+    {{- block "pre_title" . }}{{- end }}
+    <h1>{{ .Title}}</h1>
+
+    {{- block "content" . }}{{- end }}
+</main>
+
+{{ partial "site_footer.html" . }}

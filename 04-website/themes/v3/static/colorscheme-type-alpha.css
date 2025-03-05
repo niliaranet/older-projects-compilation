@@ -1,0 +1,37 @@
+:root {
+    --base00: #2a2520;
+    --base01: #39342f;
+    --base02: #433e39;
+    --base03: #4d4843;
+    --base04: #57524d;
+    --base05: #ece1d7;
+    --base06: #e3d8ce;
+    --base07: #d8cdc3;
+    --base08: #ece1d7;
+    --base09: #86a3a3;
+    --base0A: #99d59d;
+    --base0B: #9aacce;
+    --base0C: #ebc06d;
+    --base0D: #ebc06d;
+    --base0E: #e49b5d;
+    --base0F: #8e733f;
+
+    --fg: var(--base05);
+    --bg-base: var(--base00);
+    --bg-above: var(--base01);
+
+    --bg-post: #292929;
+    --bg-post-alt: #2e2e2e;
+    --bg-nav: #1d1d1d;
+
+    --fg-comment: var(--base09);
+    --fg-info: var(--base04);
+    --fg-highlight: var(--base0C);
+
+    --fg-title-1: var(--base05);
+    --fg-title-2: var(--base0A);
+    --fg-title-3: var(--base05);
+
+    --border-top: var(--fg-highlight);
+    --border-bottom: #000;
+}

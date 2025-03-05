@@ -1,0 +1,36 @@
+--------------------------------------------------------------------------------
+ACTIVITAT AVALUABLE AC3
+--------------------------------------------------------------------------------
+Mòdul: MP12- Projectes
+--------------------------------------------------------------------------------
+UF: UF1
+--------------------------------------------------------------------------------
+Professor: Albert Guardiola, Marc Callejón
+--------------------------------------------------------------------------------
+Data límit d'entrega: 16/10/2024 23:59
+--------------------------------------------------------------------------------
+Mètode d'entrega: Per mitjà del Clickedu de l'assignatura. Les activitats entregades més enllà de la data límit només podran obtenir una nota de 5.
+--------------------------------------------------------------------------------
+Instruccions: S'ha d'entregar un únic fitxer comprimit amb el nom:
+--------------------------------------------------------------------------------
+	MP12-PROJ1-ENTR3.zip/rar
+--------------------------------------------------------------------------------
+Es valorará la presentació.
+
+Tasca 1. Desenvolupar el codi de l'API especificada, en llenguatge Python. El codi de l'API ha de complir els següents requisits:
+Requisits funcionals: 
+-Adequar-se coompletament a l'especificació elaborada a l' ENTREGA 1. Qualsevol desviació respecte de l'especificació ha de documentar-se a la Tasca 2.
+Requisits tecnològics:
+-El codi de l'API ha d'estar modularitzat, com a mínim, de la següent manera.
+   -Mòdul principal (app.py): instanciació i configuració (incloses les rutes) del servidor Flask.
+   -Mòdul de base de dades (bd.py): crides a la base de dades.
+   -Mòdul d'autenticació (auth.py): gestió de l'autenticació d'usuaris.
+-Les crides a la base de dades han d'estar sotmeses a control d'excepcions.
+-Les claus d'autenticació de l'API han d guardar-se encriptades a la base de dades.
+
+Tasca 2. Lliurar un checklist dels requisits funcionals especificats (ENTERGA 1) que marqui clarament si s'han implementat o no en el codi lliurat. Els requisits no implementats han de venir acompanyats d'una justificació de per què no s'han implementat.
+
+Tasca 3. Allotjar l'API al servidor de hosting https://www.pythonanywhere.com/.
+    (Es proporciona a continuació un tutorial per a allotjar una aplicació python amb una base de dades MySQL)
+                       https://blog.pythonanywhere.com/121/
+

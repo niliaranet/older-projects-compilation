@@ -1,0 +1,26 @@
+{{ define "main" }}
+<main class="post">
+    {{ partial "site_nav.html" . }}
+    {{- block "pre_title" . }}{{- end }}
+    <h1>{{ .Title}}</h1>
+
+    {{- block "content" . }}{{- end }}
+</main>
+
+{{ end }}
+
+{{ define "pre_title" }}
+{{ with .Parent }}
+<p>
+go to <a href="{{ .RelPermalink }}">{{ lower .LinkTitle }}</a>
+</p>
+{{ end }}
+{{ end }}
+
+{{ define "content" }}
+
+<div id="content">
+    {{ .Content }}
+</div>
+
+{{ end }}

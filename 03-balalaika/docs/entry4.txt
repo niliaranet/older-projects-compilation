@@ -1,0 +1,25 @@
+--------------------------------------------------------------------------------
+ACTIVITAT AVALUABLE AC4
+--------------------------------------------------------------------------------
+Mòdul: MP12- Projectes
+--------------------------------------------------------------------------------
+UF: UF1
+--------------------------------------------------------------------------------
+Professor: Albert Guardiola, Marc Callejón
+--------------------------------------------------------------------------------
+ Data d'entrega:  30/10/24
+--------------------------------------------------------------------------------
+Mètode d'entrega: Per mitjà del Clickedu de l'assignatura. Les activitats entregades més enllà de la data límit només podran obtenir una nota de 5.
+--------------------------------------------------------------------------------
+Instruccions: S'ha d'entregar un únic fitxer comprimit amb el nom:
+--------------------------------------------------------------------------------
+	MP12-PROJ1-ENTR4.zip/rar
+--------------------------------------------------------------------------------
+Es valorará la presentació.
+
+Tasca 1. Testejar l'API desenvolupada, de manera exhaustiva (tots els endpoints, tots els paràmetres, tots els mètodes disponibles), amb un TalendTester o un forntend similar.
+
+Tasca 2. Generar la documentació de l'API en format HTML mitjançant la llibreria flask-apispec o similar:
+https://flask-apispec.readthedocs.io/en/latest/
+
+

@@ -1,0 +1,54 @@
+:root {
+    --base00: #2a2520;
+    --base01: #39342f;
+    --base02: #433e39;
+    --base03: #4d4843;
+    --base04: #57524d;
+    --base05: #ece1d7;
+    --base06: #e3d8ce;
+    --base07: #d8cdc3;
+    --base08: #ece1d7;
+    --base09: #86a3a3;
+    --base0A: #99d59d;
+    --base0B: #9aacce;
+    --base0C: #ebc06d;
+    --base0D: #ebc06d;
+    --base0E: #e49b5d;
+    --base0F: #8e733f;
+    /*
+    --melange1: #352F15;
+    --melange2: #B65C30;
+    --melange3: #789940;
+    --melange4: #EBC040;
+    --melange5: #9AAC60;
+    --melange6: #B38057;
+    --melange7: #86A350;
+    --melange8: #A38D3a;
+    --melange9: #4D4520;
+    --melange10: #F17C30;
+    --melange11: #99D550;
+    --melange12: #EBC030;
+    --melange13: #9AAC50;
+    --melange14: #CE9B50;
+    --melange15: #88B360;
+    --melange16: #C1A740;
+    */
+
+    --fg: var(--base05);
+    --bg-base: var(--base00);
+    --bg-above: var(--base01);
+
+    --bg-post: #292929;
+    --bg-post-alt: #2e2e2e;
+    --bg-nav: #1d1d1d;
+
+    --fg-date: #777;
+    --fg-highlight: var(--base0C);
+
+    --fg-title-1: var(--fg-highlight);
+    --fg-title-2: #a8f;
+
+    --border-top: var(--fg-highlight);
+    --border-bottom: #000;
+}
+

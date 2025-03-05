@@ -1,0 +1,12 @@
+{{ partial "site_header-no-css.html" . }}
+{{ partial "site_nav.html" . }}
+<main>
+    {{- block "pre-title" . }}{{- end }}
+    <h1>{{ .Title}}</h1>
+    <div id="content">
+    {{ .Content }}
+    </div>
+</main>
+
+
+{{ partial "site_footer.html" . }}

@@ -1,0 +1,24 @@
+{{ partial "site_header.html" . }}
+{{ partial "site_nav.html" . }}
+
+<main>
+<p>
+    go to <a href="{{ site.BaseURL }}posts">posts</a>
+</p>
+<h1>This is {{ site.Title }}</h1>
+<img class="main" src="cicada-smol.png" alt="">
+<!--
+<p>
+    site.BaseURL: (also available at .Site.BaseURL)
+    <bold>{{ site.BaseURL }}</bold>
+</p>
+-->
+
+<p>
+-- {{ site.Params.Description }} --
+</p>
+
+</main>
+
+{{ partial "site_footer.html" . }}
+

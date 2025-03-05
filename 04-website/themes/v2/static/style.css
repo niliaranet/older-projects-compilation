@@ -1,0 +1,117 @@
+body {
+    text-align: center;
+
+    color: var(--fg);
+    background-color: var(--bg-base);
+
+    font-size: calc(9px + 1vmin);
+    margin: 0em auto;
+    max-width: 1280px;
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav a {
+    padding: 0.5em;
+}
+
+main {
+    background-color: var(--bg-above);
+    padding-bottom: 1em;
+    margin: 0 auto;
+    margin-bottom: 4em;
+
+    padding-top:    3em;
+    padding-bottom: 3em;
+
+    min-height: 100vh;
+}
+
+main.post {
+    width: 70%;
+}
+
+main #content {
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    max-width: 800px;
+    /*max-width: 868px;*/
+    margin: 0 auto;
+}
+
+aside {
+    width: 30%;
+}
+
+aside div {
+    max-width: 300;
+    padding-top:    3em;
+    padding-bottom: 3em;
+}
+
+main.post, aside {
+    display: block;
+    position:relative;
+    float:left;
+}
+
+#post-list a {
+    line-height: 1.6em;
+}
+
+h1#main-title {
+    font-family: 'LoveLetter';
+}
+
+p {
+    line-height: 1.4em;
+}
+
+h2, h3, h4 {
+    margin-top: 3em;
+}
+
+a {
+    color: var(--fg-highlight);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+}
+
+blockquote {
+    font-style: italic;
+    color: #ccc;
+}
+
+p:has(code), pre:has(code) {
+    overflow: auto;
+    margin: 2em 0;
+    padding: 0.6em;
+    background-color: #272822;
+}
+
+@font-face {
+    font-family: 'LoveLetter';
+    src: url('LoveLetter.ttf');
+}
+
+@media only screen and (max-width: 900px) {
+    main.post {
+        width: 100%;
+    }
+}
+
+img.main-cover {
+    width: 50%;
+    max-width: 400px;
+}

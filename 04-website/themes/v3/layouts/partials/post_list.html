@@ -1,0 +1,28 @@
+{{- range .Pages -}}
+<div id="post-list">
+    <a href = "{{- .RelPermalink -}}" title = "{{- .Title -}}">
+    <span class="info">
+        {{ time.Format "1/06" .Date }} -
+    </span>
+    <span class="post-link">
+        {{ if lt (len .Title) 40 }}
+            {{- .Title -}}
+        {{ else }}
+            {{ slicestr .Title 0 37 }}...
+        {{ end }}</span>
+    <span class="info">
+        {{ $words := replaceRE `(?s)<code.*?</code>` "" .Content | countwords }}
+
+        {{ if lt $words 100 }}
+            (tiny)
+        {{ else if lt $words 350 }}
+            (short)
+        {{ else if lt $words 800 }}
+            (mid)
+        {{ else  }}
+            (large)
+        {{ end }}
+    </span>
+    </a>
+</div>
+{{- end -}}

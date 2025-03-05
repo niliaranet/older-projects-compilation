@@ -1,0 +1,2 @@
+DATABASE_URL="mysql://balalaika_user:password@127.0.0.1:3306/balalaika"
+SECRET="secret"

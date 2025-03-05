@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="static/alice.ico">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+
+<h1 class="main-title">In the works</h1>
+
+
+<div id="divider"></div>
+
+
+<h1>SVG Gallery</h1>
+<div id="svg-section">
+<div class="helper">
+
+<svg class="svg" height="200" width="200" fill="#069">
+    <polygon points="
+    0,0
+    200,0
+    200,50
+    50,50
+    50,75
+    200,75
+    200,200
+    0,200
+    0,150
+    150,150
+    150,125
+    0,125
+    "></polygon>
+</svg>
+
+<svg class="svg svg-1" height="160" width="250">
+    <polygon fill="#223" points="
+    0,0
+    40,0
+    95,80
+    40,160
+    0,160
+    55,80
+    "></polygon>
+    <polygon fill="#547" points="
+    50,0
+    90,0
+    200,160
+    160,160
+    125,109.25
+    90,160
+    50,160
+    105,80
+    "></polygon>
+    <polygon fill="#636" points="
+    121,30
+    250,30
+    250,70
+    148,70
+    "></polygon>
+    <polygon fill="#636" points="
+    160,90
+    250,90
+    250,130
+    188,130
+    "></polygon>
+</svg>
+
+
+<svg class="svg svg-2" height="200" width="200" fill="#069">
+    <linearGradient id="grad2" cx="25%" cy="25%">
+      <stop offset="0%" stop-color="#fff4" />
+      <stop offset="100%" stop-color="#fff0" />
+    </linearGradient>
+
+    <linearGradient id="grad3" cx="25%" cy="25%">
+      <stop offset="0%" stop-color="#fff0" />
+      <stop offset="100%" stop-color="#fff4" />
+    </linearGradient>
+
+    <polygon fill="#069" points="
+    0,200
+    50,100
+    160,120
+    "></polygon>
+
+    <polygon fill="url(#grad3)" points="
+    0,200
+    50,100
+    110,125
+    "></polygon>
+
+    <polygon fill="#046" points="
+    0,200
+    160,120
+    110,125
+    "></polygon>
+
+
+    <polygon fill="#069" points="
+    200,200
+    120,160
+    165,130
+    "></polygon>
+
+    <polygon fill="url(#grad2)" points="
+    200,200
+    165,130
+    150,160
+    "></polygon>
+
+    <polygon fill="#046" points="
+    200,200
+    120,160
+    150,160
+    "></polygon>
+
+
+    <polygon fill="#069" points="
+    100,0
+    155,110
+    60,80
+    "></polygon>
+
+    <polygon fill="url(#grad2)" points="
+    100,0
+    155,110
+    90,70
+    "></polygon>
+
+    <polygon fill="#046" points="
+    155,110
+    60,80
+    90,70
+    "></polygon>
+</svg>
+
+
+
+<svg class="svg svg-3" height="200" width="200" fill="#069">
+    <defs>
+        <mask id="mask-eye">
+            <rect width="100%" height="100%" fill="white" />
+            <circle cx="70" cy="30" r="5" fill="black" />
+            <circle cx="130" cy="170" r="5" fill="black" />
+        </mask>
+    </defs>
+    <polygon points="
+    50, 30
+    150, 30
+    150, 75
+    130, 100
+    70,  100
+    70,  120
+    50,  120
+    50, 150
+    30, 150
+    30, 50
+    50, 50
+    100, 50
+    100, 45
+    50, 45
+    " mask="url(#mask-eye)"></polygon>
+    <svg height="200" width="200">
+    <polygon points="
+    150, 170
+    50, 170
+    50, 120
+    70, 100
+    130, 100
+    150, 80
+    150, 50
+    170, 50
+    170, 150
+    150, 150
+    100, 150
+    100, 155
+    150, 155
+    " mask="url(#mask-eye)" fill="#ed4"></polygon>
+    </svg>
+
+    <path d="M 50 30 C 50 00, 150 00, 150 30" mask="url(#mask-eye)"/>
+    <path d="M 30 50 C 00 50, 00 150, 30 150" />
+    <path d="M 150 75 C 150 90, 140 100, 130 100" fill-rule="evenodd" />
+
+    <path d="M 50 170 C 50 200, 150 200, 150 170" fill="#ed4" mask="url(#mask-eye)"/>
+    <path d="M 70 100 C 60 100, 50 110, 50 120" fill="#ed4"/>
+    <path d="M 170 50 C 200 50, 200 150, 170 150" fill="#ed4"/>
+</svg>
+
+</div>
+</div>
+
+
+<div id="divider"></div>
+
+
+
+<h1>Audio Player</h1>
+<div id="audio-player">
+    <audio id="audio" src="static/Let There Be (Love).mp3"></audio>
+
+    <h2>Cidoku - Let There Be (Love).mp3</h2>
+    <span class="deco deco1"
+        >░</span
+    ><span class="deco deco2"
+        >▒</span
+    ><span
+        > ♬ </span
+    ><span class="deco deco3"
+        >▒</span
+    ><span class="deco deco4"
+        >░</span>
+    <span class="state">paused</span>
+    <span class="deco deco4"
+        >░</span
+    ><span class="deco deco3"
+        >▒</span
+    ><span
+        > ♬ </span
+    ><span class="deco deco2"
+        >▒</span
+    ><span class="deco deco1"
+        >░</span>
+
+    <br><br>
+    <div class="cover">
+        <div class="helper">
+            <canvas id="wave"></canvas>
+        </div>
+        <img src="static/l.gif" alt="">
+
+    </div>
+
+    <br>
+    
+    <div class="progress">
+        <div class="bar-back"></div>
+        <div class="bar-top">
+            <div class="ball"></div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <span class="bLoop">↻</span>
+        <span class="bHardBack">|◁</span>
+        <span class="bBack">◁◁</span>
+        <span class="bPlay">▷</span>
+        <span class="bForward">▷▷</span>
+        <span class="bHardForward">▷|</span>
+        <span class="bSettings">⇄<div class="helper">
+            <div class="audioControl">
+                <div class="bar-back"></div>
+                <div class="bar-top">
+                    <div class="ball"></div>
+                </div>
+            </div>
+        </div>
+        </span>
+    </div>
+</div>
+
+
+<div id="divider"></div>
+
+
+<h1>Video player</h1>
+<p>Not implemented yet</p>
+
+<div id="divider"></div>
+
+
+<script src="svgs.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/foobar404/wave.js/dist/bundle.js"></script>
+<script src="audio.js"></script>
+
+</body>
+</html>

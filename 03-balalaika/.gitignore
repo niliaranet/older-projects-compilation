@@ -1,0 +1,7 @@
+lock/
+target/
+Cargo.lock
+**/*.rs.bk
+.env
+lyrics_cache/
+covers/

@@ -1,0 +1,28 @@
+[package]
+name = "Balalaika"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+actix-web = { version = "4.9.0"}
+sqlx = { version = "0.8.2", features = ["mysql", "macros", "runtime-tokio"] }
+serde = { version = "1.0.210", features = ["derive"] }
+tokio = "1.40.0"
+dotenv = "0.15.0"
+serde_json = "1.0.128"
+env_logger = "0.11.6"
+jsonwebtoken = "9.3.0"
+chrono = "0.4.39"
+utoipa-actix-web = "0.1.2"
+utoipa = { version = "5.3.1", features= ["actix_extras", "chrono"] }
+utoipa-swagger-ui = { version = "9.0.0", features = ["actix-web"] }
+
+[package.metadata.scripts]
+db_create = "bash ./scripts/create_db.sh"
+# db_populate = "bash ./scripts/populate.sh"
+db_fast_populate = "bash ./scripts/fast_populate.sh"
+db_start = "sudo systemctl start mariadb"
+db_stop = "sudo systemctl stop mariadb"
+# db_start = "sudo docker start sqlx"
+# db_start = "sudo docker stop sqlx"
+# db_remove = "sudo docker rm sqlx"

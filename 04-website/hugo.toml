@@ -1,0 +1,14 @@
+#baseURL = 'https://about-hugo.github.io/hugo-bare-bones'
+#baseURL = 'localhost:1313/hugo-bare-bones'
+#baseURL = 'niliara.net'
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Niliaranet'
+theme = 'v3'
+
+# disable useful things to see a clean site structure
+# for demo and learning
+disableKinds = ['taxonomy', 'term', 'sitemap', 'RSS']
+
+[params]
+description = 'Site under heavy construction - last update: may 2025'

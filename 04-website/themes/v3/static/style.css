@@ -1,0 +1,126 @@
+body {
+    text-align: center;
+
+    color: var(--fg);
+    background-color: var(--bg-base);
+
+    font-size: calc(10px + 1vmin);
+    margin: 0em auto;
+    margin-bottom: 5em;
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav a {
+    padding: 0.5em;
+}
+
+main {
+    padding-bottom: 1em;
+    margin: 0 auto;
+
+    padding-top:    3em;
+    padding-bottom: 3em;
+
+    width: 80%;
+    max-width: 900px;
+}
+
+main #content {
+    text-align: left;
+    /*max-width: 868px;*/
+    margin: 0 auto;
+}
+
+#post-list a {
+    line-height: 1.6em;
+}
+
+p {
+    line-height: 1.4em;
+}
+
+h2, h3, h4 {
+    margin-top: 3em;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: var(--fg-title-1);
+    font-style: italic;
+}
+
+h1#main-title {
+    color: var(--fg-title-1);
+    font-family: 'LoveLetter';
+    font-style: normal;
+}
+
+h2 {
+    color: var(--fg-title-2);
+    font-family: monospace;
+}
+
+h3 {
+    color: var(--fg-title-3);
+    font-style: italic;
+}
+
+a {
+    color: var(--fg-highlight);
+    text-decoration: none;
+    font-family: monospace;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    max-width: 700px;
+    width: 100%;
+    margin: 1.6em auto;
+}
+
+blockquote {
+    font-style: italic;
+    color: var(--fg-comment);
+}
+
+p:has(code), pre:has(code) {
+    overflow: auto;
+    margin: 2em 0;
+    padding: 0.6em;
+    background-color: #272822;
+}
+
+@font-face {
+    font-family: 'LoveLetter';
+    src: url('LoveLetter.ttf');
+}
+
+@media only screen and (max-width: 900px) {
+    main {
+        /*width: 100%;*/
+    }
+}
+
+img.main-cover {
+    width: 50%;
+}
+
+#posts .info { 
+    color: var(--fg-info);
+}
+
+#posts a:hover { 
+    text-decoration: none;
+}
+
+#posts a:hover .post-link { 
+    text-decoration: underline;
+}

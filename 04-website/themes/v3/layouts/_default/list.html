@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main>
+    {{ partial "site_nav.html" . }}
+    {{- block "pre_title" . }}{{- end }}
+    <h1>{{ .Title}}</h1>
+    {{- block "content" . }}{{- end }}
+</main>
+{{ end }}
+
+{{ define "content" }}
+
+{{ .Content }}
+<br>
+
+
+
+<div id="posts">
+    {{ partial "post_list.html" . }}
+</div>
+
+{{ end }}

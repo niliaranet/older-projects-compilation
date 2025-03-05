@@ -1,0 +1,358 @@
+/*----------------*/
+/* Global section */
+/*----------------*/
+:root {
+    --bg-base: #111;
+    --bg-alt: #1a1f28;
+    --fg-base: #adcaf2;
+    --grey-basic: #fff2;
+    --fg-high: linear-gradient(to right, #ff9966, #ff5e62);
+}
+
+body {
+    background-color: var(--bg-base);
+    color: var(--fg-base);
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+h1 {
+    margin: 1em 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    background-image: var(--fg-high);
+    background-clip: text;
+    color: transparent;
+}
+
+div#divider {
+    margin: 32em 0;
+}
+
+
+/*---------------*/
+/* Intro section */
+/*---------------*/
+#intro {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.4em;
+    width: 26.4em;
+}
+
+
+/*-------------*/
+/* SVG section */
+/*-------------*/
+#svg-section {
+    max-width: 900px;
+    width: 80vw;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 5px solid var(--grey-basic);
+}
+
+#svg-section .helper {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#svg-section .svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: inline-block;
+}
+
+@media only screen and (max-width: 700px) {
+    #svg-section {
+        width: 100vw;
+        border-left: none;
+        border-right: none;
+    }
+}
+
+
+/*---------------*/
+/* Audio section */
+/*---------------*/
+#audio-player {
+    background-color: var(--bg-alt);
+    border-radius: 1em;
+    padding: 1em;
+    width: 60vw;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#audio-player .cover {
+    background-color: black;
+    width: 30vw;
+    max-width: 300px;
+    height: 30vw;
+    max-height: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#audio-player .cover img {
+    width: 100%;
+    aspect-ratio: 1;
+    margin: 0;
+    display:block;
+    z-index: 2;
+    position: relative;
+}
+
+#audio-player .deco {
+    animation: trans1 1.5s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes trans1 {
+    0% {opacity: 1}
+    50% {opacity: 0.2}
+}
+
+#audio-player .helper {
+    position: relative;
+}
+
+#audio-player .cover .helper canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30vw;
+    max-width: 300px;
+    height: 30vw;
+    max-height: 300px;
+}
+
+#audio-player .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#audio-player .controls span {
+    width: 3em;
+    line-height: 3em;
+    border-radius: 0.6em;
+    transition: background-color 0.1s ease;
+}
+
+#audio-player .controls span:hover {
+    background-color: var(--grey-basic);
+    cursor: pointer;
+}
+
+#audio-player .progress {
+    position: relative;
+    width: 80%;
+    height: 1em;
+    margin: 1em auto;
+
+    cursor: pointer;
+}
+
+#audio-player .progress div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    margin: 0.35em 0;
+    height:0.3em;
+    border-radius:0.25em;
+
+    transition: 0.2s ease;
+}
+
+#audio-player .progress:hover div {
+    margin: 0.25em 0;
+    height: 0.5em;
+}
+
+#audio-player .progress .bar-back {
+    width: 100%;
+    background-color: var(--grey-basic);
+}
+
+#audio-player .progress .bar-top {
+    width: 0%;
+    background-image: var(--fg-high);
+}
+
+#audio-player .progress .bar-top .ball {
+    position: absolute;
+    top: -0.1em;
+    left: 0;
+
+    background-image: var(--fg-high);
+    width: 0em;
+    height: 0em;
+    border-radius: 50%;
+    visibility: hidden;
+
+    transition-property: height, width, top;
+}
+
+#audio-player .progress:hover .bar-top .ball {
+    top: -0.5em;
+    width: 1em;
+    height: 1em;
+    visibility: visible;
+}
+
+
+#audio-player .progress .bar-front {
+    height:0.5em;
+    border-radius:0.25em;
+    background-color: var(--grey-basic);
+    width: 100%;
+}
+
+#audio-player .bSettings .audioControl {
+    position: absolute;
+    bottom: 3em;
+    left: 0.1em;
+
+    width: 1em;
+    padding: 0em;
+
+    height: 0em;
+    background-color: var(--bg-base);
+    border-radius: 0.5em;
+    transition: 0.2s ease-in-out;
+    transition-property: height;
+}
+
+#audio-player .bSettings:hover .audioControl {
+    height: 7em;
+    padding: 1em;
+    padding-bottom: 0em;
+}
+
+#audio-player .triggered {
+    background-color: var(--grey-basic);
+}
+
+#audio-player .bSettings.triggered .audioControl {
+    height: 7em;
+    padding: 1em;
+    padding-bottom: 0em;
+}
+
+#audio-player .bSettings .audioControl .bar-back {
+    position: absolute;
+    bottom: 0em;
+    left: 0.1em;
+
+    width: 0.3em;
+    height: calc(100% - 1em);
+
+    margin: 1.25em;
+    margin-bottom:0em;
+
+    transition: 0.2s ease-in-out;
+    border-radius:0.25em;
+
+    background-color: var(--grey-basic);
+}
+
+#audio-player .bSettings .audioControl:hover .bar-top,
+#audio-player .bSettings .audioControl:hover .bar-back
+{
+    left: 0em;
+    width: 0.5em;
+}
+
+#audio-player .bSettings .audioControl .bar-top {
+    position: absolute;
+    bottom: 0em;
+    left: 0.1em;
+
+    width: 0.3em;
+    height: calc(75% - 1em);
+
+    margin: 1.25em;
+    margin-bottom:0em;
+
+    transition: 0.2s ease-in-out;
+    border-radius:0.25em;
+
+    background-image: var(--fg-high);
+}
+
+#audio-player .bSettings .audioControl .bar-top .ball {
+    position: absolute;
+    bottom: 0;
+    left: 0em;
+
+    background-image: var(--fg-high);
+    width: 0em;
+    height: 0em;
+    border-radius: 50%;
+    visibility: hidden;
+
+    transition: 0.1s ease-in-out;
+    transition-property: height, width, top;
+}
+
+#audio-player .bSettings .audioControl:hover .bar-top .ball {
+    bottom: 0em;
+    left: -0.25em;
+    width: 1em;
+    height: 1em;
+    visibility: visible;
+}
+
+@media only screen and (max-width: 700px) {
+    #audio-player {
+        width: 100%;
+        border-radius: 0;
+
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #audio-player .cover {
+        width: 60vw;
+        height: 60vw;
+    }
+
+    #audio-player .cover .helper canvas {
+        width: 60vw;
+        height: 60vw;
+    }
+}
+
+
+
+/*---------------*/
+/* Video section */
+/*---------------*/
+#video {
+    width: 70vw;
+    max-width: 700px;
+    height: 50vw;
+    max-height: 500px;
+    margin: 0 auto;
+}
+
+#video video {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    #video {
+        width: 100vw;
+        height: 80vw;
+    }
+}
