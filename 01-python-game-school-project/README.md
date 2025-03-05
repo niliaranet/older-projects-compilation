@@ -1,7 +1,6 @@
 # Python game school project
-This is a school project heavily "inspired" by Slayin',
-made using python3 and the pyxel fantasy console.
-Developed in my first year doing web development.
+This is a school project heavily inspired by Slayin',
+made using python and the pyxel fantasy console.
 
 ## Dependencies
 To play the project, you need to have the following dependencies installed in your system:
@@ -11,6 +10,6 @@ To play the project, you need to have the following dependencies installed in yo
 
 To execute, run:
 
-```
+```bash
 python3 main.py
 ```

@@ -1,3 +1,4 @@
 # Pomodoro
-Poorly coded pomodoro built Rust with the Iced library.
-Developed in my first year doing web development.
+Pomodoro application written in Rust with the Iced library.
+
+Its current state is inefficient and unfinished.
