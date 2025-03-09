@@ -1,4 +1,6 @@
 # Pomodoro
 Pomodoro application written in Rust with the Iced library.
 
-Its current state is inefficient and unfinished.
+![screenshot](screenshot.png)
+
+Its current state is highly inefficient, which led me to abandon the project.

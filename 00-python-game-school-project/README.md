@@ -2,6 +2,8 @@
 This is a school project heavily inspired by Slayin',
 made using python and the pyxel fantasy console.
 
+![screenshot](screenshot.png)
+
 ## Dependencies
 To play the project, you need to have the following dependencies installed in your system:
 - Python3
@@ -12,4 +14,3 @@ To execute, run:
 
 ```bash
 python3 main.py
-```

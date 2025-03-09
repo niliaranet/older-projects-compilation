@@ -1,5 +1,7 @@
 # Balalaika
 Lyrics api written in rust (school project).
+Currently available to try at niliara.net/balalaika
+(registration not allowed).
 
 ## Setup
 ### Dependencies
