@@ -1,6 +1,7 @@
 # Python game school project
 This is a school project heavily inspired by Slayin',
-made using python and the pyxel fantasy console.
+written in python with the pyxel fantasy console.
+Made by [Brugir](https://github.com/Brugir) and I.
 
 ![screenshot](screenshot.png)
 
