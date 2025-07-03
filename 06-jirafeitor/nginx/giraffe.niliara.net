@@ -1,0 +1,12 @@
+server {
+    listen       80;
+    server_name  giraffe.niliara.net;
+
+    # location /api/videos/realsource {
+    #   alias /var/www/jirafeitor/filesystem;
+    # }
+
+    location /api {
+        proxy_pass http://localhost:8080;
+    }
+}

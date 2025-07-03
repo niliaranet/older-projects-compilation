@@ -1,0 +1,54 @@
+## Requisitos tecnológicos:
+
+### Frontend
+    
+Mínimos
+- HTML
+- CSS
+- Javascript
+- Diseño responsive (mobile first)
+
+Opcionales
+-Librerías o frameworks de Javascript: ReactJS, AngularJS...
+-Framework o preprocesador CSS
+
+
+### Backend
+Se sugiere uno de estos: 
+- PHP
+- PYTHON
+- C# 
+- NodeJS
+
+- Uso de algún framework
+- Bases de datos (SQL) o (NOSQL)
+
+Opcionales
+-Análisi de datos
+
+## Requisitos formales:
+- Código entregable
+- Dossier entregable
+
+Mínimos
+-Código completo de la aplicación web en repositorio.
+-Alojamiento de la aplicación en un hosting gratuito y puesta en producción.
+
+-README bien documentado (Markdown), con:
+       -Funcionalidad
+       -Diagramas UML (código), ER (base de datos).
+       -Explicación de arquitectura.
+       -Detalles de código
+       -Dependencias
+       -Endpoints del backend i objetos utilizados
+
+--------------------------------------------------------------------------------
+
+
+-Entrega del proyecto dentro del plazo.
+-Respeto de las licencias de software.
+
+Opcionales
+-Test unitarios.
+-Documentación automática del código (herramientas del tipo Doxygen)
+-Vídeo-presentación del proyecto.
